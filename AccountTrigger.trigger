@@ -1,5 +1,5 @@
 trigger AccountTrigger on Account (after insert,after update ,after delete) { 
-    //This Trigger also consist of handler class
+    //This Trigger also consist of handler class named Account Trigger Handler
     AccountTriggerHandler handler = new AccountTriggerHandler();
     if(trigger.isinsert){
          handler.afterInsert(Trigger.new);
